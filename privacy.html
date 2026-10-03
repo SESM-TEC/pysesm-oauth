@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+  PySESM data sync: privacy policy of the OAuth application.
+  Version: 0.1.0
+  States what the application accesses, that it has no server and collects
+  nothing, the Limited Use commitment, and how to revoke access.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy: PySESM data sync</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Privacy policy</h1>
+    <p class="subtitle">PySESM data sync. Effective 3 October 2026.</p>
+
+    <h2>Who we are</h2>
+    <p>PySESM data sync is the Google OAuth application of the SESM research
+    group (Tecnológico de Costa Rica). Group members use it with rclone to
+    copy the research data of the PySESM project between their computers
+    and the project's folder in Google Drive. See the
+    <a href="https://sesm-tec.github.io/pysesm-oauth/">home page</a>.</p>
+
+    <h2>What it accesses</h2>
+    <p>The application requests one permission: access to Google Drive
+    (scope <code>https://www.googleapis.com/auth/drive</code>). rclone uses
+    it only to list, upload, download and update the files of the project's
+    data folder, and to transfer ownership of those files within the group
+    when a member leaves the project.</p>
+
+    <h2>What it collects</h2>
+    <p>Nothing. The application has no server, database or analytics. rclone
+    runs on the member's own computer and talks directly to Google; the
+    access token Google issues is stored only in that member's rclone
+    configuration file. The group's maintainers never receive members'
+    tokens, files or Google account data through this application.</p>
+
+    <h2>Sharing and use</h2>
+    <p>No data obtained through Google APIs is sold, shared with third
+    parties, used for advertising, or used to develop, improve or train
+    artificial intelligence or machine learning models. The use of
+    information received from Google APIs adheres to the
+    <a
+    href="https://developers.google.com/terms/api-services-user-data-policy"
+    >Google
+    API Services User Data Policy</a>, including the Limited Use
+    requirements.</p>
+
+    <h2>Removing access</h2>
+    <p>A member can revoke the application's access at any time on the
+    <a href="https://myaccount.google.com/connections">third-party
+    connections page</a> of their Google account, and delete the token by
+    removing the remote from their rclone configuration. Files they copied to
+    the project folder remain there under the group's control.</p>
+
+    <h2>Changes and contact</h2>
+    <p>Changes to this policy are published on this page with a new
+    effective date. Questions: open an issue at
+    <a href="https://github.com/SESM-TEC/pysesm-oauth/issues"
+    >github.com/SESM-TEC/pysesm-oauth/issues</a>,
+    or write to Pablo Alvarado Moya, palvarado [at] tec [dot] ac [dot] cr.</p>
+  </main>
+  <footer>
+    <a href="https://sesm-tec.github.io/pysesm-oauth/">PySESM data sync</a>
+  </footer>
+</body>
+</html>

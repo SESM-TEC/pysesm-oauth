@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+  PySESM data sync: home page of the OAuth application.
+  Version: 0.1.0
+  Describes what the application is and who uses it, and links the privacy
+  policy, as Google requires before an External OAuth app is published.
+  The app name must match the consent screen exactly: PySESM data sync.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PySESM data sync</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>PySESM data sync</h1>
+    <p class="subtitle">SESM research group, Tecnológico de Costa Rica</p>
+
+    <p>PySESM data sync is the Google OAuth application that members of the
+    SESM research group use to copy the research data of the PySESM project
+    between their own computers and the project's folder in Google Drive.
+    The copying is done by <a href="https://rclone.org">rclone</a>, an
+    open-source program that runs on each member's computer.</p>
+
+    <p>It is not a public service: there is nothing to sign up for, no
+    server, and no website besides these two pages. Only group members, who
+    receive setup instructions from the group, use it.</p>
+
+    <h2>What it can access</h2>
+    <p>When a member connects rclone, Google asks them to grant access to
+    their Google Drive. rclone uses that access only to read and write the
+    files of the project's data folder. Details are in the
+    <a href="https://sesm-tec.github.io/pysesm-oauth/privacy.html">privacy
+    policy</a>.</p>
+
+    <h2>Why Google shows a warning</h2>
+    <p>The application is used by a small research group and has not gone
+    through Google's verification, which is meant for apps offered to the
+    public. Google therefore shows the message "Google hasn't verified this
+    app" the first time a member connects. Members who expect it may
+    continue; anyone else should not.</p>
+
+    <h2>Contact</h2>
+    <p>Open an issue at
+    <a href="https://github.com/SESM-TEC/pysesm-oauth/issues"
+    >github.com/SESM-TEC/pysesm-oauth/issues</a>,
+    or write to Pablo Alvarado Moya, palvarado [at] tec [dot] ac [dot] cr.</p>
+  </main>
+  <footer>
+    <a href="https://sesm-tec.github.io/pysesm-oauth/privacy.html">Privacy
+    policy</a>
+  </footer>
+</body>
+</html>
